@@ -29,7 +29,7 @@
     }
 }
 
-// Media Queries
+// Media Queries hero
 
 @media (max-width: 1440px) { 
 
@@ -120,7 +120,17 @@ iframe {
     }
 } 
 
-// Media Queries
+// Media Queries mapa
+
+@media (max-width: 320px) {
+    .mapa {
+        margin-top: 10px;
+        
+            &__desaparecer {
+                height: 10px;
+            }
+    }
+}
 
 @media (max-width: 425px) {
     iframe {
@@ -130,7 +140,7 @@ iframe {
 
 @media (max-width: 768px) {
     .mapa {
-        height: 65vh;
+        height: 100%;
     }
 }   
 
@@ -176,4 +186,43 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+// Media Queries triologia
+
+@media (max-width: 1024px) {
+    .triologia {
+        i {
+            height: 100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .triologia {
+        min-width: 100%;
+        height: 90vh;
+        margin-bottom: 80px;
+        &__texto {
+         display: contents;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .triologia {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .triologia {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .triologia {
+        height: 120vh;
+    }
 }
