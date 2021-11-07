@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+
+    <meta name="keywords" content="chocolate, bombones, chocolate artesanal">
+    <meta name="description" content="Contactate con Chocolatisima. Realizá tu pedidos on-line.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../sass/estilos/main.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a92199fd07.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a92199fd07.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts Urbanist -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!-- Animación titulos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Contacto</title>
+
+</head>
+
+<body>
+
+    <!-- Navegación -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid menu">
+                <a class="navbar-brand logo" href="../index.html"><img class="logo" src="../img/logo.jpg"
+                        alt="logo chocolate"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu__centrado" id="navbarNav">
+                    <ul class="navbar-nav menu__letra">
+                        <li class="nav-item menu__boton">
+                            <a class="nav-link" aria-current="page" href="../secciones/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item menu__boton">
+                            <a class="nav-link" href="../secciones/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item menu__boton">
+                            <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item menu__boton">
+                            <a class="nav-link" href="..secciones/contacto.html" tabindex="-1"
+                                aria-disabled="true">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu__carrito">
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Contacto -->
+    <section>
+
+        <h1 class="blog__titulo animate__heartBeat">Contacto</h1>
+        <div class="contacto">
+            <form action="" method="GET">
+
+                <!-- Fila 1 -->
+
+                <div class="row align-items-center contacto__f1">
+
+                    <!-- Nombre -->
+
+                    <div class="col">
+                        <label class="" for="nombre"></label>
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" placeholder="Nombre"
+                            required>
+                    </div>
+
+                    <!-- Apellido -->
+
+                    <div class="col">
+                        <label class="" for="apellido"></label>
+                        <input class="contacto__input" type="text" name="apellido" id="apellido" placeholder="Apellido"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Fila 2 -->
+
+                <div class="row align-items-center  contacto__f1">
+
+                    <!-- Mail -->
+
+                    <div class="col">
+                        <label class="" for="correo"></label>
+                        <input class="contacto__input" type="email" name="correo" id="correo" placeholder="Mail"
+                            required>
+                    </div>
+
+                    <!-- Tipo de cliente -->
+
+                    <div class="col">
+                        <label class="contacto__tx" for="clientType">Empresa</label>
+                        <input class="contacto__tx" type="radio" name="clientType" value="empresa">
+                        <label class="contacto__tx" for="clientType">Particular</label>
+                        <input class="contacto__tx" type="radio" name="clientType" id="particular" checked>
+                    </div>
+
+                </div>
+
+                <!-- Fila 3 - Selección de producto -->
+
+                <div class="row align-items-center  contacto__f1">
+                    <div class="col">
+                        <label class="contacto__tx" for="infoProducto">Selecioná el producto: </label>
+                        <select class="contacto__input" name="infoProducto" id="infoProducto">
+                            <option class="contacto__seleccion" value="Ejemplo" disabled selected>Seleccione un
+                                producto</option>
+                            <option class="" value="A mi manera">A mi manera</option>
+                            <option class="" value="La suerte loca">La suerte loca</option>
+                            <option class="" value="Caja TOC">TOC TOC</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Fila 4 - Mensaje-->
+
+                <div class="row align-items-center  contacto__f1">
+                    <div class="col">
+                        <textarea class="contacto__inputtx" name="comentarios" id="" cols="50" rows="4"
+                            placeholder="Escribí tu comentario"></textarea>
+                    </div>
+                </div>
+
+                <!-- Fila 5 - Suscripción-->
+
+                <div class="row align-items-center  contacto__f1">
+                    <div class="col">
+                        <label class="contacto__tx" for="suscripcion">Suscribirme </label>
+                        <input class="contacto__tx" type="checkbox" name="suscripcion" id="suscripcion" value="1">
+                    </div>
+                </div>
+
+                <!-- Fila 6 - Botones-->
+
+                <div class="row align-items-center  contacto__f1">
+                    <div class="col">
+                        <input class="contacto__boton" type="reset" value="Limpiar campos">
+                        <input class="contacto__boton" type="submit" value="Enviar">
+                    </div>
+                </div>
+
+            </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container footer__caja">
+            <div class="row ">
+                <!-- Suscribite -->
+                <div class="col">
+                    <div class="container footer">
+                        <div class="row row-cols-1 footer__respons">
+                            <div class="col footer__titulo">Suscribite</div>
+                            <div class="col">
+
+                                <form>
+                                    <div class="mb-3 footer__data">
+                                        <label for="exampleInputEmail1" class="form-label"></label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Mail">
+                                    </div>
+                                    <div class="mb-3 footer__data">
+                                        <label for="exampleInputPassword1" class="form-label"></label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Nombre y apellido">
+                                    </div>
+                                    <div class="mb-3 form-check footer__data footer__check">
+                                        <label class="form-check-label" for="exampleCheck1">Acepto los <a href=""
+                                                data-bs-toggle="modal" data-bs-target="#terminos">términos y las
+                                                condiciones</a></label>
+                                        <input type="checkbox" class="footer__tilde" id="exampleCheck1 ">
+
+                                        <!-- Modal: Términos y condiciones -->
+
+                                        <div id="terminos" class="modal " tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Términos y condiciones</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body centrado">
+                                                        <p>
+
+                                                            El presente contrato describe los términos y condiciones
+                                                            aplicables al uso del contenido, productos y/o servicios del
+                                                            sitio web Mil Formatos del cual es titular Rubén Pérez
+                                                            Pérez. Para hacer uso del contenido, productos y/o servicios
+                                                            del sitio web el usuario deberá sujetarse a los presentes
+                                                            términos y condiciones.
+
+                                                            I. OBJETO
+                                                            El objeto es regular el acceso y utilización del contenido,
+                                                            productos y/o servicios a disposición del público en general
+                                                            en el dominio https://www.milformatos.com.
+
+                                                            El titular se reserva el derecho de realizar cualquier tipo
+                                                            de modificación en el sitio web en cualquier momento y sin
+                                                            previo aviso, el usuario acepta dichas modificaciones.
+
+                                                            El acceso al sitio web por parte del usuario es libre y
+                                                            gratuito, la utilización del contenido, productos y/o
+                                                            servicios implica un costo de suscripción para el usuario.
+
+                                                            El sitio web solo admite el acceso a personas mayores de
+                                                            edad y no se hace responsable por el incumplimiento de esto.
+
+                                                            El sitio web está dirigido a usuarios residentes en México y
+                                                            cumple con la legislación establecida en dicho país, si el
+                                                            usuario reside en otro país y decide acceder al sitio web lo
+                                                            hará bajo su responsabilidad.
+
+                                                            La administración del sitio web puede ejercerse por
+                                                            terceros, es decir, personas distintas al titular, sin
+                                                            afectar esto los presentes términos y condiciones.
+
+                                                            II. USUARIO
+                                                            La actividad del usuario en el sitio web como publicaciones
+                                                            o comentarios estarán sujetos a los presentes términos y
+                                                            condiciones. El usuario se compromete a utilizar el
+                                                            contenido, productos y/o servicios de forma lícita, sin
+                                                            faltar a la moral o al orden público, absteniéndose de
+                                                            realizar cualquier acto que afecte los derechos de terceros
+                                                            o el funcionamiento del sitio web.
+
+                                                            El usuario se compromete a proporcionar información verídica
+                                                            en los formularios del sitio web.
+
+                                                            El acceso al sitio web no supone una relación entre el
+                                                            usuario y el titular del sitio web.
+
+                                                            El usuario manifiesta ser mayor de edad y contar con la
+                                                            capacidad jurídica de acatar los presentes términos y
+                                                            condiciones.
+
+                                                            III. ACCESO Y NAVEGACIÓN EN EL SITIO WEB
+                                                            El titular no garantiza la continuidad y disponibilidad del
+                                                            contenido, productos y/o servicios en el sitito web,
+                                                            realizará acciones que fomenten el buen funcionamiento de
+                                                            dicho sitio web sin responsabilidad alguna.
+
+                                                            El titular no se responsabiliza de que el software esté
+                                                            libre de errores que puedan causar un daño al software y/o
+                                                            hardware del equipo del cual el usuario accede al sitio web.
+                                                            De igual forma, no se responsabiliza por los daños causados
+                                                            por el acceso y/o utilización del sitio web.
+
+                                                            IV. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS
+                                                            Conforme a lo establecido en la Ley Federal de Protección de
+                                                            Datos Personales en Posesión de Particulares, el titular de
+                                                            compromete a tomar las medidas necesarias que garanticen la
+                                                            seguridad del usuario, evitando que se haga uso indebido de
+                                                            los datos personales que el usuario proporcione en el sitio
+                                                            web.
+
+                                                            El titular corroborará que los datos personales contenidos
+                                                            en las bases de datos sean correctos, verídicos y actuales,
+                                                            así como que se utilicen únicamente con el fin con el que
+                                                            fueron recabados.
+
+                                                            El uso de datos personales se limitará a lo previsto en el
+                                                            Aviso de Privacidad disponible en
+                                                            https://www.milformatos.com/aviso-de-privacidad.
+
+                                                            Mil Formatos se reserva el derecho de realizar cualquier
+                                                            tipo de modificación en el Aviso de Privacidad en cualquier
+                                                            momento y sin previo aviso, de acuerdo con sus necesidades o
+                                                            cambios en la legislación aplicable, el usuario acepta
+                                                            dichas modificaciones.
+
+                                                            El sitio web implica la utilización de cookies que son
+                                                            pequeñas cantidades de información que se almacenan en el
+                                                            navegador utilizado por el usuario como datos de ingreso,
+                                                            preferencias del usuario, fecha y hora en que se accede al
+                                                            sitio web, sitios visitados y dirección IP, esta información
+                                                            es anónima y solo se utilizará para mejorar el sitio web.
+                                                            Los cookies facilitan la navegación y la hacen más amigable,
+                                                            sin embargo, el usuario puede desactivarlos en cualquier
+                                                            momento desde su navegador en el entendido de que esto puede
+                                                            afectar algunas funciones del sitio web.
+
+                                                            V. POLÍTICA DE ENLACES
+                                                            En el sitio web puede contener enlaces a otros sitios de
+                                                            internet pertenecientes a terceros de los cuales no se hace
+                                                            responsable.
+
+                                                            VI. POLÍTICA DE PROPIEDAD INTELECTUAL E INDUSTRIAL
+                                                            El titular manifiesta tener los derechos de propiedad
+                                                            intelectual e industrial del sitio web incluyendo imágenes,
+                                                            archivos de audio o video, logotipos, marcas, colores,
+                                                            estructuras, tipografías, diseños y demás elementos que lo
+                                                            distinguen, protegidos por la legislación mexicana e
+                                                            internacional en materia de propiedad intelectual e
+                                                            industrial.
+
+                                                            El usuario se compromete a respetar los derechos de
+                                                            propiedad industrial e intelectual del titular pudiendo
+                                                            visualizar los elementos del sitio web, almacenarlos,
+                                                            copiarlos e imprimirlos exclusivamente para uso personal.
+
+                                                            VII. LEGISLACIÓN Y JURISDICCIÓN APLICABLE
+                                                            La relación entre el usuario y el titular se regirá por las
+                                                            legislaciones aplicables en México.
+
+                                                            MilFormatos no se responsabiliza por la indebida utilización
+                                                            del contenido, productos y/o servicios del sitio web y del
+                                                            incumplimiento de los presentes términos y condiciones.
+
+                                                            Formato de Términos y Condiciones
+                                                        </p>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="footer__boton"
+                                                                data-bs-dismiss="modal">Cerrar</button>
+                                                            <button type="button" class="footer__boton">Acepto</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary footer__boton">Suscribirme!</button>
+                                </form>
+
+                            </div>
+                            <div class="col footer__redes">
+
+                                <i class="fab fa-3x fa-whatsapp"></i>
+                                <i class="fab fa-3x fa-twitter"></i>
+                                <i class="fab fa-3x fa-instagram"></i>
+                                <i class="fas fa-3x fa-envelope-open-text"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen lado derecho -->
+                <div class="col">
+                    <div class="container footer__fondo">
+                        <div class="row row-cols-1 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

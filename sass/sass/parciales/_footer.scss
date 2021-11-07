@@ -1,0 +1,108 @@
+@import "./variables";
+
+.footer {
+    height: auto;
+  
+    &__caja {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    &__titulo {
+        text-align: center;
+        font-size: $letraTituloGrande;
+    }
+
+    &__fondo {
+        background-image: url("https://envato-shoebox-0.imgix.net/d893/6b2b-6302-4ee2-a348-f5af85d8c4dd/_MG_9579.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=8baeae5d9e2225a500ae416f8273052f");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 80%;
+        height: 90%;
+        margin-bottom: 100px;
+    }
+
+    &__data {
+        padding: 25px 0 25px 0;
+    }
+
+    &__boton {
+        font-size: $letraMenu;
+        color: $colorMarronOscuro;
+        justify-content: space-around;
+        padding: 5px 10px;
+        background-color: $colorVainilla;
+        border: none;
+        border-radius: 4px;
+        cursor: none;
+        display: block;
+        margin: auto;
+    }
+
+    &__boton:hover{
+        background-color: $colorMarronMedio;
+        box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        color: $colorClaro;
+        border-radius: 4px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+
+    &__check {
+        text-align: center;
+        align-items: center;
+    }
+   
+    &__redes {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        align-items: center;
+        color: $colorMarronOscuro;
+    }
+
+    i:hover {
+        transform: scale(1.5);
+	    -webkit-transform: scale(1.5);
+	    -o-transform: scale(1.5); 
+	    -moz-transform: scale(1.5);
+        transition-duration: 1s;
+    }
+
+    &__tilde {
+        float: none;
+        display: inline-flex;
+        margin-left: 10px;
+    }
+}
+    
+@media (max-width: 1024px) { 
+
+    .form-control {
+        font-size: 1.5rem;
+    }
+
+    .form-check-label {
+        font-size: 1.5rem;
+    }
+    
+    .footer__caja {
+        margin-top: 0;
+    }
+    .footer__boton {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 425px) { 
+    .footer__fondo { 
+        display: none;
+    }
+    .footer__respons {
+        width: 90vw;
+    }
+}

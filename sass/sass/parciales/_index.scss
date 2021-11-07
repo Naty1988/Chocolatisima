@@ -1,0 +1,179 @@
+@import "./variables";
+
+.hero {
+        
+    img {
+        width: 100%;
+        height:90vh;
+        object-fit: cover;
+    }
+
+    &__indicador{
+        margin-bottom: 13%;
+    }
+
+    &__caja {
+        background-color: #FFFFFF90;
+        border-radius: 2%;
+        margin-bottom: 15%;
+    }
+
+    h5 {
+        font-size: $letraSubtitulo;
+        color: $colorMarronOscuro;
+    }
+    
+    p {
+        font-size: $letraSubtitulo;
+        color: $colorMarronOscuro;
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1440px) { 
+
+    .hero {
+        width: 100%;
+        height: 800px;
+        
+        h5 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) { 
+    .hero {
+        
+        img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+        
+        &__caja { 
+            margin-bottom: 10%;  
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .hero {
+           
+        &__caja { 
+            margin-bottom: 20%;  
+        }
+    }
+}
+// Sección mapa
+
+iframe {
+    height: 50vh;
+    width: 30vw;
+}
+
+.mapa {
+    background-color:$colorVainilla;
+    margin: 20px 0 150px 0;
+    height: 80vh;
+    
+    &__caja {
+        height: auto;
+        width: auto;
+        margin: 20px 10px;
+    }
+
+    &__marco {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+    }  
+
+    &__cajaTX{
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__titulo {
+        font-size: $letraTituloGrande;
+        text-align: center;
+        margin: 40px 10px;
+    }
+
+    &__texto {
+        font-size: $letraTitulo;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    &__logo {
+        font-size: 3rem;
+        color: $colorMarronOscuro;
+        margin: 10px 10px;
+        display: block;
+        text-align: center;
+    }
+} 
+
+// Media Queries
+
+@media (max-width: 425px) {
+    iframe {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .mapa {
+        height: 65vh;
+    }
+}   
+
+.triologia {
+    min-width: 100%;
+    height: 60vh;
+    background-color: $colorMarronMedio;
+    margin: 0%;
+    margin-bottom: 150px;
+    
+    i {  display: flex;
+        justify-content: space-around;
+        height: 200px;
+        align-items: center;
+        color: $colorClaro;
+        font-size: 4rem;
+    }
+    
+    i:hover {
+        opacity: 50%;
+    }
+
+    &__texto {
+        height: 80px;
+        align-items: center;
+        text-align: center;
+        color: $colorClaro;
+        font-size: $letraTitulo;
+    }
+    h2 {
+        font-size: $letraTitulo;
+        color: $colorVainilla;
+    }
+
+    p {
+        font-size: $letraSubtitulo;
+        margin: 30px 70px; 
+    }
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

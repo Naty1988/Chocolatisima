@@ -1,0 +1,79 @@
+@import "./variables";
+
+.menu {
+    background-color: $colorVainilla;
+    padding: 10px 0 10px 0;
+    
+    img{
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: $margenIzquierdo;
+        box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear;
+    }
+
+    img:hover {
+        -webkit-transform: scale(0.3);
+        transform: scale(1.3);
+    }
+
+    &__centrado {
+       justify-content: center;
+    }
+
+    &__letra{
+       font-size: $letraMenu;
+       color: $colorMarronOscuro;
+       width: 50%;
+       justify-content: space-around;
+    }
+
+    &__boton {
+       padding: 5px 10px;
+    }
+    
+    &__carrito {
+        width: 100px;
+        height: auto;
+        font-size: 2rem;
+        justify-content: center;
+        text-align: center;
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear;
+      
+        a {
+            color: $colorMarronOscuro; 
+        }
+    }
+
+    &__carrito:hover {
+        -webkit-transform: scale(0.3);
+        transform: scale(1.3);
+    }
+
+}
+
+.menu__boton:hover{
+    background-color: $colorClaro;
+    box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+    -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+    -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+    color: $colorMarronOscuro;
+}
+
+// Media Queries
+
+@media (max-width: 768px) { 
+      .menu__letra {
+       justify-content: center;
+        width: 100%; 
+        font-size: 1.5rem;
+        a {
+            text-align: center;
+        }
+    } 
+}

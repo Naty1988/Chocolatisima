@@ -1,0 +1,137 @@
+@import "./variables";
+
+.productos {
+    background-color: $colorMarronMedio;
+    min-width: 100%;
+    height: 70vh;
+    margin-top: 10px;
+
+    &__justh {
+        display: flex;
+        justify-content: center;
+    }   
+
+    &__justv {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    &__caja {
+        width: 180px;        
+        height: 380px;
+        border: solid 2px $colorClaro;
+        overflow: hidden;
+    }
+    
+    &__foto {
+        height: 300px;
+        object-fit: cover;
+        -webkit-transition: 0.5s linear;
+        transition: 0.5s linear;
+    }
+       
+    &__foto:hover {
+        -webkit-transform: scale(0.3);
+        transform: scale(1.1);
+    }
+
+    &__boton {
+        font-size: $letraMenu;
+        color: $colorMarronOscuro;
+        justify-content: space-around;
+        padding: 5px 5px;
+        background-color: $colorVainilla;
+        border: none;
+        border-radius: 4px;
+        cursor: none;
+        display: block;
+        margin: 10px;
+    }
+
+    &__boton:hover{
+        background-color: $colorMarronMedio;
+        box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        color: $colorClaro;
+        border-radius: 4px;
+        display: block;     
+    }
+
+    .btn:focus {
+        box-shadow:none;
+   }
+
+    h5 {
+        color: $colorMarronOscuro;
+        font-size: $letraSubtitulo;
+        text-align: center;
+    }
+
+    &__modalColor {
+        background-color: $colorVainilla;
+    }
+
+    &__fotoModal {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+}
+
+.just{
+    text-align: center;
+    background-color: $colorVainilla;
+}
+
+// Media Queries
+
+@media (max-width: 1024px) { 
+    .productos {
+        margin-bottom: 40px;
+        
+        &__boton {
+            font-size: 1.5rem;
+        }
+
+        h5{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .just {
+        p, li {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .productos {
+        height: 100%;
+        
+        &__caja{
+            margin: 40px 0;
+        }
+    }    
+}
+
+@media (max-width: 425px) { 
+    .productos {
+        height: 100%;
+    
+        &caja{
+            margin: 40px 0;
+        }
+    }
+}
+
+@media (max-width: 320px) { 
+    .just { 
+        img {
+            display: none;
+        }
+    }
+}

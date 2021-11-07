@@ -1,0 +1,147 @@
+@import "./variables";
+
+.blog {
+    height: 70vh;
+    min-width: 100%;
+    margin-top: 20px;
+    background-color: $colorMarronOscuro;
+    display: flex;
+    
+    &__alineadov {
+        width: 100%;
+        align-content: center;
+    }
+
+    &__alineadoh {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__titulo{
+        font-size: $letraTituloGrande;
+        color: $colorMarronOscuro;
+        padding: 20px;
+        text-align: center;      
+    }
+
+    img{
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+    }
+  	
+    img:hover {
+        filter: opacity(.5);
+    }
+
+    &__boton {
+        font-size: $letraMenu;
+        color: $colorMarronOscuro;
+        justify-content: space-around;
+        padding: 5px 10px;
+        background-color: $colorVainilla;
+        border: none;
+        border-radius: 4px;
+        cursor: none;
+        display: block;
+        margin: auto;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    &__boton:hover{
+        background-color: $colorMarronMedio;
+        box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+        color: $colorClaro;
+        border-radius: 4px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    h5 {
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+    }
+}
+
+.sombra:hover { 
+    box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+    -webkit-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+    -moz-box-shadow: 2px 3px 9px -2px rgba(62,16,16,0.58);
+}
+
+.modal__titulo{
+    color: $colorMarronOscuro;
+    width: 100%;
+    text-align: center;
+}
+
+.blogJust {
+    text-align: center;
+    margin: 20px;
+}
+
+// Media Queries
+
+@media (max-width: 1024px) { 
+    .blog {
+            margin-bottom: 40px;
+            height: 90vh;
+        
+        &__boton {
+            font-size: 1.5rem;
+        }
+    
+        &__alineadoh {
+            h5 {
+                font-size: 1.5rem;
+            }
+            p {
+            font-size: 1.5rem;
+            }
+        }
+
+        &__alineadoh {
+            margin: 40px 0;
+        }
+    }
+
+    .modal__titulo {
+        font-size: 1.5rem;
+    }
+
+    .blogJust {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) { 
+    .blog {
+            margin-bottom: 40px;
+            height: 100%;
+
+            &__alineadov {
+            align-content: none;
+         }   
+    }
+}
+
+@media (max-width: 425px) { 
+    .blog {
+        height: 100%;
+    }
+}
+
+@media (max-width: 375px) { 
+    .blogJust {
+        img {
+            display: none;
+        }
+    }
+}
