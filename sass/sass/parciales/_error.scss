@@ -1,0 +1,46 @@
+@import "./variables";
+
+.error {
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+
+    &__parrafo {
+        font-size: $letraTituloGrande;
+        color: $colorMarronOscuro;
+        text-align: center;
+    }
+
+    &__img {
+        width: 200px;
+        height: 100px;
+        margin: auto;
+    }
+
+    &__boton {
+        border: solid $colorMarronOscuro 2px;
+        background-color: $colorVainilla;
+        width: 150px;
+        height: 60px;
+        text-align: center;
+        margin: auto;
+        border-radius: 3%;  
+    }
+
+    &__boton:hover{
+        background-color: $colorMarronOscuro;
+        }
+
+    &__boton__a{
+        text-decoration: none;
+        color: $colorMarronOscuro;
+        font-size: 1rem;
+    }
+
+    &__boton__a:hover{
+        color: $colorVainilla;
+        }
+}

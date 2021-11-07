@@ -27,6 +27,12 @@
   font-size: 1.2rem;
   color: #4C3327; }
 
+@media (max-width: 2560px) {
+  .hero h5 {
+    font-size: 3rem; }
+  .hero p {
+    font-size: 1.5rem; } }
+
 @media (max-width: 1440px) {
   .hero {
     width: 100%;
@@ -55,7 +61,7 @@ iframe {
 .mapa {
   background-color: #FCE193;
   margin: 20px 0 150px 0;
-  height: 80vh; }
+  height: 60vh; }
   .mapa__caja {
     height: auto;
     width: auto;
@@ -96,6 +102,14 @@ iframe {
   .mapa {
     height: 100%; } }
 
+@media (max-width: 1024px) {
+  .mapa {
+    height: auto; } }
+
+@media (max-width: 1444px) {
+  .mapa {
+    height: auto; } }
+
 .triologia {
   min-width: 100%;
   height: 60vh;
@@ -130,15 +144,32 @@ iframe {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+@media (min-width: 2560px) {
+  .triologia {
+    height: 30vh;
+    margin-top: 100px; }
+    .triologia h2 {
+      font-size: 3rem; }
+    .triologia p {
+      font-size: 1.5rem; } }
+
+@media (max-width: 1444px) {
+  .triologia {
+    height: 70vh; } }
+
 @media (max-width: 1024px) {
-  .triologia i {
-    height: 100px; } }
+  .triologia {
+    height: 50vh;
+    margin-top: auto; }
+    .triologia i {
+      height: 100px; } }
 
 @media (max-width: 768px) {
   .triologia {
     min-width: 100%;
-    height: 90vh;
-    margin-bottom: 80px; }
+    height: 80vh;
+    margin-bottom: 80px;
+    margin-top: auto; }
     .triologia__texto {
       display: contents; } }
 
@@ -665,3 +696,35 @@ iframe {
 @media (max-width: 320px) {
   .just img {
     display: none; } }
+
+.error {
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 100px; }
+  .error__parrafo {
+    font-size: 3rem;
+    color: #4C3327;
+    text-align: center; }
+  .error__img {
+    width: 200px;
+    height: 100px;
+    margin: auto; }
+  .error__boton {
+    border: solid #4C3327 2px;
+    background-color: #FCE193;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    border-radius: 3%; }
+  .error__boton:hover {
+    background-color: #4C3327; }
+  .error__boton__a {
+    text-decoration: none;
+    color: #4C3327;
+    font-size: 1rem; }
+  .error__boton__a:hover {
+    color: #FCE193; }

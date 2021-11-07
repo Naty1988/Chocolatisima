@@ -31,6 +31,17 @@
 
 // Media Queries hero
 
+@media (max-width: 2560px) {
+    .hero {
+        h5 {
+            font-size: $letraTituloGrande;
+        }
+        p {
+            font-size: $letraTitulo;
+        }
+    }
+}  
+
 @media (max-width: 1440px) { 
 
     .hero {
@@ -80,7 +91,7 @@ iframe {
 .mapa {
     background-color:$colorVainilla;
     margin: 20px 0 150px 0;
-    height: 80vh;
+    height: 60vh;
     
     &__caja {
         height: auto;
@@ -144,6 +155,18 @@ iframe {
     }
 }   
 
+@media (max-width: 1024px) {
+    .mapa {
+        height: auto;
+    }
+}  
+
+@media (max-width: 1444px) {
+    .mapa {
+        height: auto;
+    }
+}  
+
 .triologia {
     min-width: 100%;
     height: 60vh;
@@ -190,8 +213,29 @@ iframe {
 
 // Media Queries triologia
 
+@media (min-width: 2560px) {
+    .triologia {
+        height: 30vh;
+        margin-top: 100px;
+        h2 {
+            font-size: $letraTituloGrande;
+        }
+        p {
+            font-size: $letraTitulo;
+        }
+    }
+}  
+
+@media (max-width: 1444px) {
+    .triologia {
+        height: 70vh;
+    }
+}  
+
 @media (max-width: 1024px) {
     .triologia {
+        height: 50vh;
+        margin-top: auto;
         i {
             height: 100px;
         }
@@ -201,8 +245,9 @@ iframe {
 @media (max-width: 768px) {
     .triologia {
         min-width: 100%;
-        height: 90vh;
+        height: 80vh;
         margin-bottom: 80px;
+        margin-top: auto;
         &__texto {
          display: contents;
         }
